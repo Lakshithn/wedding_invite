@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: url('collage.jpg') no-repeat center center fixed;
+    background: url('/home/lakshith-nagarur/wedding_invite/DSC_0271.JPG') no-repeat center center fixed;
     background-size: cover;
     color: #ffffff;
 }
@@ -9,7 +9,7 @@ body {
 header {
     text-align: center;
     padding: 50px 20px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(9, 248, 149, 0.5);
 }
 
 header h1 {
@@ -24,7 +24,7 @@ header p {
 
 section {
     padding: 40px 20px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(120, 223, 3, 0.7);
     margin: 20px;
     border-radius: 10px;
     text-align: center;
@@ -52,19 +52,19 @@ form input, form select, form button {
 }
 
 form button {
-    background-color: #ff4081;
+    background-color: #0f80eb;
     color: white;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color: #e91e63;
+    background-color: #f1440f;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(223, 5, 212, 0.5);
 }
 
 footer p {
