@@ -3,118 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Invitation</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(to bottom, #f9f6ff, #ffffff);
-            color: #4a4a4a;
-        }
-        .container {
-            text-align: center;
-            padding: 20px;
-        }
-        .invitation-card {
-            max-width: 600px;
-            margin: 0 auto;
-            background: #ffffff;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 15px;
-            overflow: hidden;
-        }
-        .header {
-            background: linear-gradient(to right, #ff758c, #ff7eb3);
-            color: white;
-            padding: 30px;
-            font-size: 1.8rem;
-            font-weight: bold;
-        }
-        .story-section {
-            padding: 20px;
-            background-color: #fdf9ff;
-        }
-        .story-section h2 {
-            font-size: 1.4rem;
-            color: #ff7eb3;
-        }
-        .story-section p {
-            margin: 10px 0;
-            line-height: 1.6;
-        }
-        .details-section {
-            padding: 20px;
-        }
-        .details-section h2 {
-            color: #4a4a4a;
-        }
-        .details-section p {
-            font-size: 1.2rem;
-            margin: 8px 0;
-        }
-        .rsvp-section {
-            background: #f4efff;
-            padding: 20px;
-        }
-        .rsvp-section h2 {
-            color: #4a4a4a;
-        }
-        .rsvp-section input, .rsvp-section button {
-            padding: 10px;
-            margin: 10px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-        .rsvp-section input {
-            width: calc(100% - 30px);
-            box-sizing: border-box;
-        }
-        .rsvp-section button {
-            background: #ff7eb3;
-            color: white;
-            cursor: pointer;
-            transition: 0.3s ease;
-        }
-        .rsvp-section button:hover {
-            background: #e36a9e;
-        }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            color: #a3a3a3;
-            font-size: 0.9rem;
-        }
-    </style>
+    <title>Our Wedding Invitation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="invitation-card">
-            <div class="header">
-                You Are Invited to Our Wedding!
-            </div>
-            <div class="story-section">
-                <h2>Our Love Story</h2>
-                <p>5 years ago, we swiped right and never looked back. Join us as we celebrate our journey of love and commitment.</p>
-            </div>
-            <div class="details-section">
-                <h2>Wedding Details</h2>
-                <p>Date: January 6th & 7th</p>
-                <p>Venue: [Insert Venue Name Here]</p>
-                <p>Dress Code: Formal Attire</p>
-            </div>
-            <div class="rsvp-section">
-                <h2>RSVP Now</h2>
-                <form>
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <button type="submit">RSVP</button>
-                </form>
-            </div>
+    <!-- Background Music -->
+    <audio autoplay loop>
+        <source src="your_music_file.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Our Wedding</h1>
+        <p>Join us as we celebrate our love!</p>
+    </header>
+
+    <!-- Countdown Timer -->
+    <section id="countdown">
+        <h2>Countdown to the Big Day</h2>
+        <div class="timer">
+            <div><span id="days">0</span> Days</div>
+            <div><span id="hours">0</span> Hours</div>
+            <div><span id="minutes">0</span> Minutes</div>
+            <div><span id="seconds">0</span> Seconds</div>
         </div>
-        <footer>
-            Designed with 💕 by [Your Name]
-        </footer>
-    </div>
+    </section>
+
+    <!-- Love Story Section -->
+    <section id="story">
+        <h2>Our Love Story</h2>
+        <p>It all started five years ago when we met online...</p>
+        <p>From our first date to countless adventures together, our love has grown stronger.</p>
+        <p>Now, we are thrilled to celebrate this beautiful journey with you!</p>
+    </section>
+
+    <!-- Venue Details Section -->
+    <section class="details">
+        <h2>Wedding Details</h2>
+        <ul>
+            <li><strong>Date:</strong> January 6th & 7th</li>
+            <li><strong>Time:</strong> 4:00 PM onwards</li>
+            <li><strong>Venue:</strong> [Venue Name]</li>
+        </ul>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094136!2d144.9556512159049!3d-37.817327742014796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf57733169bff99f1!2sFlinders+Street+Station!5e0!3m2!1sen!2sau!4v1612140193295!5m2!1sen!2sau"
+            allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- RSVP Form -->
+    <section id="rsvp">
+        <h2>RSVP</h2>
+        <form id="rsvp-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <select required>
+                <option value="">Will you attend?</option>
+                <option value="yes">Yes, I'll be there!</option>
+                <option value="no">Sorry, I can't make it</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Designed with love by [Your Name]</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
