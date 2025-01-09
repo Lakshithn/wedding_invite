@@ -49,27 +49,6 @@ section h2 {
     color: #3d6f43; /* Dark green for timer text */
 }
 
-form input, form select, form button {
-    display: block;
-    width: 80%;
-    margin: 10px auto;
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: none;
-    background: #ffffff; /* White background for form elements */
-}
-
-form button {
-    background-color: #f1c40f; /* Soft yellow for the button */
-    color: #6a4f2d; /* Dark brown text for buttons */
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-form button:hover {
-    background-color: #e67e22; /* Soft orange on hover for buttons */
-}
 
 footer {
     text-align: center;
@@ -118,7 +97,4 @@ audio {
     display: none; /* Hide the audio element */
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
+
