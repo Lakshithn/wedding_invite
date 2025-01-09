@@ -58,7 +58,13 @@
     <footer>
         <p>Designed with love by Lakshith </p>
     </footer>
-
+    <script>
+        // Enable autoplay after user interaction on mobile devices
+        document.body.addEventListener('click', function() {
+            var audio = document.getElementById('background-audio');
+            audio.play();
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
