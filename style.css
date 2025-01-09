@@ -1,49 +1,48 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: url('DSC_0271.JPG') no-repeat center center fixed;
+    background: url('DSC_0271.JPG') no-repeat center center fixed; /* Keep the background image */
     background-size: cover;
-    color: #ffffff;
+    color: #333333; /* Darker text color for readability */
 }
 
 header {
     text-align: center;
     padding: 50px 20px;
-    background: rgba(255, 94, 77, 0.7); /* Bright, joyful coral color */
+    background: rgba(255, 223, 186, 0.9); /* Soft pastel peach background */
 }
 
 header h1 {
     font-size: 3rem;
     margin-bottom: 10px;
-    animation: fadeIn 2s ease-in-out;
-    color: #fff5f0; /* Light off-white text for contrast */
+    color: #6a4e1f; /* A warm brown color for contrast and elegance */
 }
 
 header p {
     font-size: 1.5rem;
-    color: #fff5f0; /* Same light off-white text for the paragraph */
+    color: #6a4e1f; /* Same brown for readability */
 }
 
 section {
     padding: 40px 20px;
-    background: rgba(255, 199, 44, 0.9); /* Fun yellow with a touch of transparency */
+    background: rgba(242, 250, 255, 0.9); /* Light pastel blue background */
     margin: 20px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for a more vibrant look */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for a gentle feel */
 }
 
 section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #ff72b5; /* Bright pink for the section header */
+    color: #ff7f50; /* Light coral color for headers */
 }
 
 .timer div {
     display: inline-block;
     margin: 0 10px;
     font-size: 1.5rem;
-    color: #ff72b5; /* Pink color for the timer text */
+    color: #ff7f50; /* Coral color for timer text */
 }
 
 form input, form select, form button {
@@ -53,29 +52,29 @@ form input, form select, form button {
     padding: 10px;
     font-size: 1rem;
     border-radius: 5px;
-    border: none;
+    border: 1px solid #ccc; /* Light gray border */
 }
 
 form button {
-    background-color: #f88e00; /* Bright orange button */
-    color: white;
+    background-color: #ffb6c1; /* Light pink button */
+    color: #6a4e1f; /* Darker text on buttons */
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
 
 form button:hover {
-    background-color: #e22e00; /* Darker orange on hover for a fun effect */
+    background-color: #ff8fa3; /* Slightly darker pink on hover */
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: rgba(0, 140, 255, 0.7); /* Fun blue for the footer */
+    background: rgba(250, 250, 250, 0.9); /* Light pastel background for footer */
 }
 
 footer p {
     font-size: 1rem;
-    color: white; /* White text for readability */
+    color: #6a4e1f; /* Dark brown text for footer */
 }
 
 @keyframes fadeIn {
