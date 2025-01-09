@@ -9,36 +9,41 @@ body {
 header {
     text-align: center;
     padding: 50px 20px;
-    background: rgba(9, 248, 149, 0.5);
+    background: rgba(255, 94, 77, 0.7); /* Bright, joyful coral color */
 }
 
 header h1 {
     font-size: 3rem;
     margin-bottom: 10px;
     animation: fadeIn 2s ease-in-out;
+    color: #fff5f0; /* Light off-white text for contrast */
 }
 
 header p {
     font-size: 1.5rem;
+    color: #fff5f0; /* Same light off-white text for the paragraph */
 }
 
 section {
     padding: 40px 20px;
-    background: rgba(120, 223, 3, 0.7);
+    background: rgba(255, 199, 44, 0.9); /* Fun yellow with a touch of transparency */
     margin: 20px;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for a more vibrant look */
 }
 
 section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    color: #ff72b5; /* Bright pink for the section header */
 }
 
 .timer div {
     display: inline-block;
     margin: 0 10px;
     font-size: 1.5rem;
+    color: #ff72b5; /* Pink color for the timer text */
 }
 
 form input, form select, form button {
@@ -52,23 +57,25 @@ form input, form select, form button {
 }
 
 form button {
-    background-color: #0f80eb;
+    background-color: #f88e00; /* Bright orange button */
     color: white;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 form button:hover {
-    background-color: #f1440f;
+    background-color: #e22e00; /* Darker orange on hover for a fun effect */
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: rgba(223, 5, 212, 0.5);
+    background: rgba(0, 140, 255, 0.7); /* Fun blue for the footer */
 }
 
 footer p {
     font-size: 1rem;
+    color: white; /* White text for readability */
 }
 
 @keyframes fadeIn {
