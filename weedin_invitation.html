@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #f9f6ff, #ffffff);
+            color: #4a4a4a;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .invitation-card {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            color: white;
+            padding: 30px;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .story-section {
+            padding: 20px;
+            background-color: #fdf9ff;
+        }
+        .story-section h2 {
+            font-size: 1.4rem;
+            color: #ff7eb3;
+        }
+        .story-section p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .details-section {
+            padding: 20px;
+        }
+        .details-section h2 {
+            color: #4a4a4a;
+        }
+        .details-section p {
+            font-size: 1.2rem;
+            margin: 8px 0;
+        }
+        .rsvp-section {
+            background: #f4efff;
+            padding: 20px;
+        }
+        .rsvp-section h2 {
+            color: #4a4a4a;
+        }
+        .rsvp-section input, .rsvp-section button {
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .rsvp-section input {
+            width: calc(100% - 30px);
+            box-sizing: border-box;
+        }
+        .rsvp-section button {
+            background: #ff7eb3;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        .rsvp-section button:hover {
+            background: #e36a9e;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #a3a3a3;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="invitation-card">
+            <div class="header">
+                You Are Invited to Our Wedding!
+            </div>
+            <div class="story-section">
+                <h2>Our Love Story</h2>
+                <p>5 years ago, we swiped right and never looked back. Join us as we celebrate our journey of love and commitment.</p>
+            </div>
+            <div class="details-section">
+                <h2>Wedding Details</h2>
+                <p>Date: January 6th & 7th</p>
+                <p>Venue: [Insert Venue Name Here]</p>
+                <p>Dress Code: Formal Attire</p>
+            </div>
+            <div class="rsvp-section">
+                <h2>RSVP Now</h2>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit">RSVP</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            Designed with 💕 by [Your Name]
+        </footer>
+    </div>
+</body>
+</html>
