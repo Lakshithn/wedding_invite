@@ -1,48 +1,50 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: url('DSC_0271.JPG') no-repeat center center fixed; /* Keep the background image */
+    background: url('wedding_invite/DSC_0271.JPG') no-repeat center center fixed;
     background-size: cover;
-    color: #333333; /* Darker text color for readability */
+    color: #333333; /* Darker text for better readability */
 }
 
 header {
     text-align: center;
     padding: 50px 20px;
-    background: rgba(255, 223, 186, 0.9); /* Soft pastel peach background */
+    background: rgba(255, 255, 255, 0.7); /* Light, soft white background for the header */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for a delicate touch */
 }
 
 header h1 {
     font-size: 3rem;
     margin-bottom: 10px;
-    color: #6a4e1f; /* A warm brown color for contrast and elegance */
+    animation: fadeIn 2s ease-in-out;
+    color: #6a4f2d; /* Elegant warm brown for the header text */
 }
 
 header p {
     font-size: 1.5rem;
-    color: #6a4e1f; /* Same brown for readability */
+    color: #6a4f2d; /* Same warm brown for the paragraph text */
 }
 
 section {
     padding: 40px 20px;
-    background: rgba(242, 250, 255, 0.9); /* Light pastel blue background */
+    background: rgba(255, 239, 179, 0.8); /* Soft pastel yellow for a light, joyful feel */
     margin: 20px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for a gentle feel */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for a light touch */
 }
 
 section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #ff7f50; /* Light coral color for headers */
+    color: #3d6f43; /* Elegant dark green for section headers */
 }
 
 .timer div {
     display: inline-block;
     margin: 0 10px;
     font-size: 1.5rem;
-    color: #ff7f50; /* Coral color for timer text */
+    color: #3d6f43; /* Dark green for timer text */
 }
 
 form input, form select, form button {
@@ -52,29 +54,31 @@ form input, form select, form button {
     padding: 10px;
     font-size: 1rem;
     border-radius: 5px;
-    border: 1px solid #ccc; /* Light gray border */
+    border: none;
+    background: #ffffff; /* White background for form elements */
 }
 
 form button {
-    background-color: #ffb6c1; /* Light pink button */
-    color: #6a4e1f; /* Darker text on buttons */
+    background-color: #f1c40f; /* Soft yellow for the button */
+    color: #6a4f2d; /* Dark brown text for buttons */
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
 
 form button:hover {
-    background-color: #ff8fa3; /* Slightly darker pink on hover */
+    background-color: #e67e22; /* Soft orange on hover for buttons */
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: rgba(250, 250, 250, 0.9); /* Light pastel background for footer */
+    background: rgba(255, 255, 255, 0.7); /* Light, soft white background for footer */
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for footer */
 }
 
 footer p {
     font-size: 1rem;
-    color: #6a4e1f; /* Dark brown text for footer */
+    color: #6a4f2d; /* Dark brown text for footer */
 }
 
 @keyframes fadeIn {
