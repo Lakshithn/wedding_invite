@@ -28,7 +28,12 @@ function updateCountdown() {
     secondsEl.textContent = seconds;
 }
 
-setInterval(updateCountdown, 1000);
+// Set multiple flower images for animation
+const flowers = document.querySelectorAll(".flower");
+flowers.forEach(flower => {
+    const image = flower.dataset.image;
+    flower.style.backgroundImage = `url('assets/${image}')`;
+});
 
 // Audio Toggle
 const audio = document.getElementById("background-music");
@@ -46,5 +51,5 @@ window.addEventListener('load', () => {
 //             audioToggle.textContent = "🔇";
 //         }
 //     });
-
+setInterval(updateCountdown, 1000);
 updateCountdown();

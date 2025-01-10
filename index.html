@@ -13,11 +13,11 @@
     <!-- Animation Containers -->
     <div id="animation-container">
         <!-- Falling Flowers -->
-        <div class="flower"></div>
-        <div class="flower"></div>
-        <div class="flower"></div>
-        <div class="flower"></div>
-        <div class="flower"></div>
+        <div class="flower" data-image="flower1.png"></div>
+        <div class="flower" data-image="flower2.png"></div>
+        <div class="flower" data-image="flower3.png"></div>
+        <div class="flower" data-image="flower4.png"></div>
+        <div class="flower" data-image="flower5.png"></div>
 
         <!-- Shining Stars -->
         <div class="star"></div>
@@ -29,10 +29,10 @@
 <body>
     <!-- Background Audio -->
     <audio id="background-music" autoplay loop>
-    <source src="assets/Perfect-(Mr-Jat.in).mp3" type="audio/mpeg">
+    <source src="assets/perfect_instrumental.ogg" type="audio/ogg">
         Your browser does not support the audio element.
     </audio>
-    <button id="audio-toggle">🔊</button>
+    <!-- <button id="audio-toggle">🔊</button> -->
 
     <!-- Header -->
     <header>
@@ -66,15 +66,15 @@
     <!-- Bride and Groom -->
     <section id="couple">
         <h2 class="fancy-font">The Couple</h2>
-        <p><strong>Groom:</strong> Lakshith </p>
-        <p><strong>Bride:</strong> Deepika</p>
+        <p class="highlight">Groom: Lakshith </p>
+        <p class="highlight">Groom: Deepika</p>
     </section>
 
     <!-- Event Details -->
     <section id="event-details">
         <h2 class="fancy-font">Wedding Details</h2>
-        <p>Where: Jnanakshi Kalyana Mantapa, Hassan</p>
-        <p>when: Reciption: 06.02.2025 18:30 onwards, wedding: 07.02.2025 09:00 onwards</p>
+        <p class="highlight">Where: Jnanakshi Kalyana Mantapa, Hassan</p>
+        <p class="highlight">when: Reciption: 06.02.2025 18:30 onwards, wedding: 07.02.2025 09:00 onwards</p>
         <div id="map-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.520334109196!2d76.1102658!3d13.0025023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba549d85ff5ff99%3A0x1c7c4f52a4b360f1!2sJnanakshi%20Kalyana%20Mantapa!5e0!3m2!1sen!2sin!4v1736462323684!5m2!1sen!2sin" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen></iframe>
         </div>
@@ -82,7 +82,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>Designed with ❤️ by Lakshith</p>
+        <p class="fancy-font">Designed with ❤️ by Lakshith</p>
     </footer>
 </body>
 </html>
