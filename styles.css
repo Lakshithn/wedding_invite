@@ -4,7 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #FFF;
     line-height: 1.6;
-    background: url('assets/background_image.jpeg') no-repeat center center fixed;
+    background: url('assets/background_images.jpeg') no-repeat center center fixed;
     background-size: cover; /* Ensures the image covers the entire background */
     overflow-x: hidden;
     scroll-behavior: smooth; /* Enable smooth scrolling */
