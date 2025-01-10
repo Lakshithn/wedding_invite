@@ -50,6 +50,7 @@ section p {
     justify-content: center;
     gap: 15px;
     font-size: 1.2rem;
+    flex-wrap: wrap; /* Wraps items on smaller screens */
 }
 
 #countdown .timer div {
@@ -58,6 +59,8 @@ section p {
     padding: 20px;
     border-radius: 10px;
     animation: pulse 2s infinite;
+    min-width: 100px; /* Ensures a minimum size for small devices */
+    text-align: center;
 }
 
 @keyframes pulse {
@@ -69,10 +72,85 @@ section p {
     }
 }
 
+/* Map Container */
+#map-container {
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
     background: #4b0082;
     color: #fff;
+}
+
+/* Responsive Design - Breakpoints */
+
+/* For Tablets */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+
+    #countdown .timer div {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    #map-container iframe {
+        height: 250px; /* Adjust the height for smaller screens */
+    }
+}
+
+/* For Phones */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+        padding: 15px;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    #countdown .timer div {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    #map-container iframe {
+        height: 200px; /* Further adjust for small screens */
+    }
+}
+
+/* Landscape Orientation */
+@media (orientation: landscape) and (max-height: 500px) {
+    section {
+        padding: 30px 10px;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    #countdown .timer div {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
 }
