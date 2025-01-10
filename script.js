@@ -1,29 +1,39 @@
 // Countdown Timer
-const weddingDate = new Date("2025-02-06T18:00:00");
+const weddingDate = new Date("YYYY-MM-DDTHH:MM:SS"); // Replace with your wedding date
+const daysEl = document.getElementById("days");
+const hoursEl = document.getElementById("hours");
+const minutesEl = document.getElementById("minutes");
+const secondsEl = document.getElementById("seconds");
 
-// Function to update the countdown
 function updateCountdown() {
     const now = new Date();
-    const timeLeft = weddingDate - now;
+    const diff = weddingDate - now;
 
-    // If the wedding day has passed
-    if (timeLeft <= 0) {
-        document.getElementById("countdown").innerHTML = "<h2>The Big Day is Here!</h2>";
-        return;
-    }
+    if (diff <= 0) return;
 
-    // Calculate remaining time
-    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
 
-    // Update the HTML elements with the calculated time
-    document.getElementById("days").textContent = days;
-    document.getElementById("hours").textContent = hours;
-    document.getElementById("minutes").textContent = minutes;
-    document.getElementById("seconds").textContent = seconds;
+    daysEl.textContent = days;
+    hoursEl.textContent = hours;
+    minutesEl.textContent = minutes;
+    secondsEl.textContent = seconds;
 }
 
-// Update the countdown every second
 setInterval(updateCountdown, 1000);
+
+// Audio Toggle
+const audio = document.getElementById("background-music");
+const audioToggle = document.getElementById("audio-toggle");
+
+audioToggle.addEventListener("click", () => {
+    if (audio.paused) {
+        audio.play();
+        audioToggle.textContent = "🔊";
+    } else {
+        audio.pause();
+        audioToggle.textContent = "🔇";
+    }
+});
