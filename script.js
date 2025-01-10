@@ -1,23 +1,24 @@
 // Countdown Timer
-const countdown = () => {
-    const weddingDate = new Date("February 6, 2025 18:00:00").getTime();
-    const now = new Date().getTime();
-    const diff = weddingDate - now;
+const weddingDate = new Date("2025-02-06T00:00:00");
 
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+function updateCountdown() {
+    const now = new Date();
+    const timeLeft = weddingDate - now;
 
-    document.getElementById("days").innerText = days;
-    document.getElementById("hours").innerText = hours;
-    document.getElementById("minutes").innerText = minutes;
-    document.getElementById("seconds").innerText = seconds;
-
-    if (diff < 0) {
-        clearInterval(timerInterval);
-        document.getElementById("countdown").innerHTML = "The Wedding is Happening!";
+    if (timeLeft <= 0) {
+        document.getElementById("countdown").innerHTML = "<h2>The Big Day is Here!</h2>";
+        return;
     }
-};
 
-const timerInterval = setInterval(countdown, 1000);
+    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+    document.getElementById("days").textContent = days;
+    document.getElementById("hours").textContent = hours;
+    document.getElementById("minutes").textContent = minutes;
+    document.getElementById("seconds").textContent = seconds;
+}
+
+setInterval(updateCountdown, 1000);

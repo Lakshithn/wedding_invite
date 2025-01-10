@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Wedding Invitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="background-audio" autoplay loop muted>
+        <source src="perfect_instrumental.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Our Wedding</h1>
+        <p>Join us as we celebrate our love!</p>
+    </header>
+
+    <!-- Countdown Timer -->
+    <section id="countdown">
+        <h2>Countdown to the Big Day</h2>
+        <div class="timer">
+            <div><span id="days">0</span> Days</div>
+            <div><span id="hours">0</span> Hours</div>
+            <div><span id="minutes">0</span> Minutes</div>
+            <div><span id="seconds">0</span> Seconds</div>
+        </div>
+    </section>
+
+    <!-- Love Story Section -->
+    <section id="story">
+        <h2>Our Love Story</h2>
+        <p>It all started five years ago when we met online...</p>
+        <p>From our first date to countless adventures together, our love has grown stronger.</p>
+        <p>Now, we are thrilled to celebrate this beautiful journey with you!</p>
+    </section>
+
+    <!-- Venue Details Section -->
+    <section id="location">
+        <h2>Wedding Venue</h2>
+        <p>We look forward to seeing you at our wedding venue. Here's how to find us:</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.520334109196!2d76.1102658!3d13.0025023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba549d85ff5ff99%3A0x1c7c4f52a4b360f1!2sJnanakshi%20Kalyana%20Mantapa!5e0!3m2!1sen!2sin!4v1736462323684!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>Designed with love by Lakshith </p>
+    </footer>
+    <script>
+        // Enable autoplay after user interaction on mobile devices
+        document.body.addEventListener('click', function() {
+            var audio = document.getElementById('background-audio');
+            audio.play();
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
