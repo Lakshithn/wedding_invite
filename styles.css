@@ -26,42 +26,21 @@ header h1 {
     margin: 0;
 }
 
-/* Navigation Styles */
+/* Remove navigation */
 nav {
-    margin-top: 10px;
-    position: fixed; /* Fix navigation bar at the top */
-    top: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    z-index: 1000;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Smooth Scroll */
-html {
-    scroll-behavior: smooth; /* Enables smooth scrolling when navigating through sections */
+    display: none; /* Hide the navigation bar */
 }
 
 /* Section Styles */
 section {
     padding: 30px;
-    margin: 80px auto; /* Added top margin to account for fixed nav */
+    margin: 20px auto;
     max-width: 1200px;
     text-align: center;
     background: rgba(255, 255, 255, 0.8); /* White background with some transparency */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 80px; /* Add margin to prevent sections from being hidden under fixed header */
 }
 
 section h2 {
@@ -123,10 +102,6 @@ section p {
         font-size: 2rem;
     }
 
-    nav a {
-        font-size: 1rem;
-    }
-
     #countdown .timer {
         flex-direction: column;
         gap: 15px;
@@ -141,11 +116,6 @@ section p {
 @media (max-width: 480px) {
     header h1 {
         font-size: 1.8rem;
-    }
-
-    nav a {
-        font-size: 0.9rem;
-        margin: 0 10px;
     }
 
     section {
