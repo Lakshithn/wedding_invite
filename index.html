@@ -3,28 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Wedding</title>
+    <title>Our Wedding Invitation</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script defer src="script.js"></script>
 </head>
 <body>
-    <audio id="background-music" autoplay loop hidden>
-        <source src="assets/perfect_instrumental.mp3" type="audio/mpeg">
+    <!-- Background Audio -->
+    <audio id="background-music" autoplay loop>
+    <source src="assets/assets/Perfect-(Mr-Jat.in).mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
+    <button id="audio-toggle">🔊</button>
 
+    <!-- Header -->
     <header>
         <h1 class="fancy-font">You're Invited to Our Wedding</h1>
     </header>
 
-    <!-- Section 1: Our Love Story -->
+    <!-- Welcome Section -->
+    <section id="welcome">
+        <h2 class="fancy-font">Welcome</h2>
+        <p>Join us in celebrating the union of two hearts, surrounded by love, laughter, and cherished memories.</p>
+    </section>
+
+    <!-- Our Love Story -->
     <section id="love-story">
         <h2 class="fancy-font">Our Love Story</h2>
+        <p>"Once in a while, right in the middle of an ordinary life, love gives us a fairy tale."</p>
         <p>We met online 5 years ago, and now we're ready to tie the knot. Join us to celebrate our special day!</p>
     </section>
 
-    <!-- Section 2: Countdown to the Big Day -->
+    <!-- Countdown Timer -->
     <section id="countdown">
         <h2 class="fancy-font">Countdown to the Big Day</h2>
         <div class="timer">
@@ -35,5 +45,26 @@
         </div>
     </section>
 
+    <!-- Bride and Groom -->
+    <section id="couple">
+        <h2 class="fancy-font">The Couple</h2>
+        <p><strong>Groom:</strong> [Your Name]</p>
+        <p><strong>Bride:</strong> [Fiancé's Name]</p>
+    </section>
+
+    <!-- Event Details -->
+    <section id="event-details">
+        <h2 class="fancy-font">Wedding Details</h2>
+        <p>Venue: [Venue Name]</p>
+        <p>Time: [Wedding Time]</p>
+        <div id="map-container">
+            <iframe src="[Google Maps Embed URL]" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Designed with ❤️ by Your Name</p>
+    </footer>
 </body>
 </html>
