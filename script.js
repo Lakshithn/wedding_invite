@@ -1,5 +1,5 @@
 // Countdown Timer
-const weddingDate = new Date("YYYY-MM-DDTHH:MM:SS"); // Replace with your wedding date
+const weddingDate = new Date("2025-02-06T18:00:00"); // Replace with your wedding date
 const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
@@ -37,3 +37,5 @@ audioToggle.addEventListener("click", () => {
         audioToggle.textContent = "🔇";
     }
 });
+
+updateCountdown();
