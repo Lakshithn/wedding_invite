@@ -5,16 +5,16 @@ body {
     color: #333;
     line-height: 1.6;
     background-color: #f9f7f6;
-    background-image: url('DSC_0271.JPG'); /* Replace with the path to your image */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: #fff; /* Ensure text is visible over the background */
+    background-image: url('path/to/your-image.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the image fixed during scrolling */
+    scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
-/* Header Styles */
+/* Header */
 header {
-    background: rgba(0, 0, 0, 0.5); /* Slightly transparent overlay for readability */
+    background: rgba(128, 0, 128, 0.7); /* Purple with transparency */
     color: white;
     padding: 20px;
     text-align: center;
@@ -26,21 +26,17 @@ header h1 {
     margin: 0;
 }
 
-/* Remove navigation */
-nav {
-    display: none; /* Hide the navigation bar */
-}
-
 /* Section Styles */
 section {
     padding: 30px;
     margin: 20px auto;
     max-width: 1200px;
     text-align: center;
-    background: rgba(255, 255, 255, 0.8); /* White background with some transparency */
+    background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 80px; /* Add margin to prevent sections from being hidden under fixed header */
+    scroll-margin-top: 50px; /* Ensures a little space when navigating */
+    min-height: 100vh; /* Ensures each section takes up at least the full height of the screen */
 }
 
 section h2 {
@@ -53,24 +49,6 @@ section h2 {
 section p {
     font-size: 1.1rem;
     color: #555;
-}
-
-/* Button Styling */
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #800080;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
-}
-
-.button:hover {
-    background-color: #4b004b;
 }
 
 /* Timer Styles */
@@ -94,6 +72,12 @@ section p {
 #countdown .timer span {
     font-size: 2rem;
     display: block;
+}
+
+/* Fancy Font Styling */
+.fancy-font {
+    font-family: 'Great Vibes', cursive;
+    color: #4b0082;
 }
 
 /* Responsive Design */
@@ -121,14 +105,4 @@ section p {
     section {
         padding: 20px;
     }
-
-    .button {
-        font-size: 1rem;
-    }
-}
-
-/* Fancy Font Styling */
-.fancy-font {
-    font-family: 'Great Vibes', cursive;
-    color: #4b0082;
 }
