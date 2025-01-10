@@ -9,7 +9,13 @@ function updateCountdown() {
     const now = new Date();
     const diff = weddingDate - now;
 
-    if (diff <= 0) return;
+    if (diff <= 0) {
+        // Countdown complete
+        document.getElementById("countdown").innerHTML = `
+            <h2 class="fancy-font">The Big Day is Here!</h2>
+            <p>We can't wait to celebrate with you!</p>`;
+        return;
+    }
 
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
@@ -26,16 +32,19 @@ setInterval(updateCountdown, 1000);
 
 // Audio Toggle
 const audio = document.getElementById("background-music");
-const audioToggle = document.getElementById("audio-toggle");
-
-audioToggle.addEventListener("click", () => {
-    if (audio.paused) {
-        audio.play();
-        audioToggle.textContent = "🔊";
-    } else {
-        audio.pause();
-        audioToggle.textContent = "🔇";
-    }
+window.addEventListener('load', () => {
+    audio.play().catch(err => console.log("Autoplay blocked. User interaction required."));
 });
+// const audioToggle = document.getElementById("audio-toggle");
+
+//     audioToggle.addEventListener("click", () => {
+//         if (audio.paused) {
+//             audio.play();
+//             audioToggle.textContent = "🔊";
+//         } else {
+//             audio.pause();
+//             audioToggle.textContent = "🔇";
+//         }
+//     });
 
 updateCountdown();
