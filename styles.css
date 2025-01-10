@@ -4,7 +4,8 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #FFF;
     line-height: 1.6;
-    background: url('assets/background_images.jpeg') no-repeat center center fixed;
+    background: linear-gradient(to bottom, #1a1a2e, #16213e); /* Gradient background */
+    background-attachment: fixed; /* Keeps the background fixed */
     background-size: cover; /* Ensures the image covers the entire background */
     overflow-x: hidden;
     scroll-behavior: smooth; /* Enable smooth scrolling */
