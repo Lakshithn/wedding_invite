@@ -36,10 +36,10 @@ flowers.forEach(flower => {
 });
 
 // Audio Toggle
-const audio = document.getElementById("background-music");
-window.addEventListener('load', () => {
-    audio.play().catch(err => console.log("Autoplay blocked. User interaction required."));
-});
+// const audio = document.getElementById("background-music");
+// window.addEventListener('load', () => {
+//     audio.play().catch(err => console.log("Autoplay blocked. User interaction required."));
+// });
 // const audioToggle = document.getElementById("audio-toggle");
 
 //     audioToggle.addEventListener("click", () => {
