@@ -28,6 +28,20 @@ function updateCountdown() {
     secondsEl.textContent = seconds;
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+    const doorContainer = document.getElementById('door-container');
+    const mainContent = document.getElementById('main-content');
+
+    // Handle door click to open
+    doorContainer.addEventListener('click', () => {
+        doorContainer.classList.add('door-open');
+        setTimeout(() => {
+            doorContainer.style.display = 'none'; // Hide the door section
+            mainContent.style.display = 'block'; // Show the main content
+        }, 1500); // Match the duration of the door opening animation
+    });
+});
+
 // Set multiple flower images for animation
 const flowers = document.querySelectorAll(".flower");
 flowers.forEach(flower => {
