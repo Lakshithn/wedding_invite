@@ -4,11 +4,113 @@ body {
     font-family: 'Baloo', sans-serif;
     color: #FFF;
     line-height: 1.6;
-    background: linear-gradient(to bottom, #1a1a2e, #16213e); /* Gradient background */
+    background: linear-gradient(to bottom, #dea2f0, #a441b1); /* Gradient background */
     background-attachment: fixed; /* Keeps the background fixed */
     background-size: cover; /* Ensures the image covers the entire background */
     overflow-x: hidden;
     scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+/* Door Container */
+#door-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-color: #4b0082;
+}
+
+/* Door Styles */
+.door {
+    width: 50%; /* Each door occupies half of the screen */
+    height: 100%;
+    background: url('assets/door.png') no-repeat center center; /* Use a detailed pattern */
+    background-size: cover;
+    position: absolute;
+    transition: transform 1.5s ease-in-out;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.6);
+    border: 8px solid #3e2723; /* Dark wood border */
+}
+
+/* Panels */
+.panel {
+    width: 90%;
+    height: 25%;
+    margin: 15px auto;
+    background: linear-gradient(to right, #5d4037, #3e2723);
+    border: 5px solid #3e2723;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Ornaments (Golden Decorations) */
+.ornament {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #ffd700, #b8860b);
+    border-radius: 50%;
+    margin: 20px auto;
+    box-shadow: 0 0 15px #ffd700, inset 0 0 10px #b8860b;
+}
+
+/* Left Door */
+#left-door {
+    left: 0;
+    transform: translateX(0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Right Door */
+#right-door {
+    right: 0;
+    transform: translateX(0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Door Text */
+#door-text {
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Great Vibes', cursive;
+}
+
+/* Main Content */
+#main-content {
+    display: none; /* Hidden initially */
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Open Door Animation */
+.door-open #left-door {
+    transform: translateX(-100%);
+}
+
+.door-open #right-door {
+    transform: translateX(100%);
+}
+
+.door-open #door-text {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 /* Header */
