@@ -3,27 +3,26 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(to bottom, #dea2f0, #a441b1);
-    background-attachment: fixed;
-    background-size: cover;
     color: #fff;
+    text-align: center;
 }
 
-/* Lock scrolling */
+/* Lock Scrolling */
 body.locked-scroll {
     overflow: hidden;
 }
 
-/* Door Container */
+/* Door Section */
 #door-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: #4b0082;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 1000;
 }
 
@@ -70,6 +69,17 @@ body.locked-scroll {
 
 .door-open ~ #main-content {
     display: block;
+}
+
+/* Box Styling */
+.box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: 80%;
+    max-width: 600px;
 }
 
 /* Countdown Timer */
