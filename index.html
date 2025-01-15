@@ -3,107 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Wedding Invitation</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Wedding Invitation</title>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
+<body class="locked-scroll">
 
-<body>
-
-    <!-- Door Section
+    <!-- Door Section -->
     <div id="door-container">
         <div id="left-door" class="door"></div>
         <div id="right-door" class="door"></div>
         <div id="door-text">
-            <p class="fancy-font">Click the door to enter</p>
-        </div>
-    </div> -->
-
-    <!-- Door Section -->
-    <div id="door-container">
-        <div id="left-door" class="door">
-        </div>
-        <div id="right-door" class="door">
-        </div>
-        <div id="door-text">
-            <p class="fancy-font">Click the door to enter</p>
+            <p>Click the doors to enter</p>
         </div>
     </div>
 
-    <!-- Animation Containers -->
-    <div id="animation-container">
-        <!-- Falling Flowers -->
-        <div class="flower" data-image="flower1.png"></div>
-        <div class="flower" data-image="flower2.png"></div>
-        <div class="flower" data-image="flower3.png"></div>
-        <div class="flower" data-image="flower4.png"></div>
-        <div class="flower" data-image="flower5.png"></div>
+    <!-- Main Content -->
+    <div id="main-content">
+        <audio controls autoplay loop>
+            <source src="assets/Vachindamma.mp3" type="audio/mpeg">
+            <source src="assets/perfect_instrumental.ogg" type="audio/ogg">
+        </audio>
 
-        <!-- Shining Stars -->
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
+        <header>
+            <h1>You're Invited to Our Wedding</h1>
+        </header>
+
+        <section id="welcome" class="content-box">
+            <h2>Welcome</h2>
+            <p>Join us in celebrating the union of two hearts, surrounded by love, laughter, and cherished memories.</p>
+        </section>
+
+        <section id="story" class="content-box">
+            <h2>Our Love Story</h2>
+            <p>"Once in a while, right in the middle of an ordinary life, love gives us a fairy tale."</p>
+            <p>We met online 5 years ago, and now we're ready to tie the knot. Join us to celebrate our special day!</p>
+        </section>
+
+        <section id="countdown" class="content-box">
+            <h2>Countdown to the Big Day</h2>
+            <div class="timer">
+                <div><span id="days">0</span> Days</div>
+                <div><span id="hours">0</span> Hours</div>
+                <div><span id="minutes">0</span> Minutes</div>
+                <div><span id="seconds">0</span> Seconds</div>
+            </div>
+        </section>
+
+        <section id="venue-info" class="content-box">
+            <h2>Venue Info</h2>
+            <p>Where: Jnanakshi Kalyana Mantapa, Hassan</p>
+            <p>Reception: 06.02.2025 18:30 onwards</p>
+            <p>Wedding: 07.02.2025 09:00 onwards</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.520334109196!2d76.1102658!3d13.0025023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba549d85ff5ff99%3A0x1c7c4f52a4b360f1!2sJnanakshi%20Kalyana%20Mantapa!5e0!3m2!1sen!2sin!4v1736462323684!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen></iframe>
+        </section>
+
+        <footer>
+            <p>Designed with ❤️ by Lakshith</p>
+        </footer>
     </div>
-
-<body>
-    <!-- Background Audio --> 
-    <audio controls autoplay muted loop>
-    <source src="assets/Vachindamma.mp3" type="audio/mpeg">
-    <source src="assets/perfect_instrumental.ogg" type="audio/ogg">
-    </audio>
-    <!-- <button id="audio-toggle">🔊</button> -->
-
-    <!-- Header -->
-    <header>
-        <h1 class="fancy-font">You're Invited to Our Wedding</h1>
-    </header>
-
-    <!-- Welcome Section -->
-    <section id="welcome">
-        <h2 class="fancy-font">Welcome</h2>
-        <p>Join us in celebrating the union of two hearts, surrounded by love, laughter, and cherished memories.</p>
-    </section>
-
-    <!-- Our Love Story -->
-    <section id="love-story">
-        <h2 class="fancy-font">Our Love Story</h2>
-        <p>"Once in a while, right in the middle of an ordinary life, love gives us a fairy tale."</p>
-        <p>We met online 5 years ago, and now we're ready to tie the knot. Join us to celebrate our special day!</p>
-    </section>
-
-    <!-- Countdown Timer -->
-    <section id="countdown">
-        <h2 class="fancy-font">Countdown to the Big Day</h2>
-        <div class="timer">
-            <div><span id="days">0</span> Days</div>
-            <div><span id="hours">0</span> Hours</div>
-            <div><span id="minutes">0</span> Minutes</div>
-            <div><span id="seconds">0</span> Seconds</div>
-        </div>
-    </section>
-
-    <!-- Bride and Groom -->
-    <section id="couple">
-        <h2 class="fancy-font">The Couple</h2>
-        <p class="highlight">Groom: Lakshith </p>
-        <p class="highlight">Bride: Deepika</p>
-    </section>
-
-    <!-- Event Details -->
-    <section id="event-details">
-        <h2 class="fancy-font">Wedding Details</h2>
-        <p class="highlight">Where: Jnanakshi Kalyana Mantapa, Hassan</p>
-        <p class="highlight">when: Reciption: 06.02.2025 18:30 onwards, wedding: 07.02.2025 09:00 onwards</p>
-        <div id="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.520334109196!2d76.1102658!3d13.0025023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba549d85ff5ff99%3A0x1c7c4f52a4b360f1!2sJnanakshi%20Kalyana%20Mantapa!5e0!3m2!1sen!2sin!4v1736462323684!5m2!1sen!2sin" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen></iframe>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p class="fancy-font">Designed with ❤️ by Lakshith</p>
-    </footer>
 </body>
 </html>
