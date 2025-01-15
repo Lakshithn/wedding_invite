@@ -2,8 +2,8 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to bottom, #dea2f0, #a441b1);
-    color: white;
+    background: linear-gradient(to bottom, #259ae7, #66e281);
+    color: rgb(221, 16, 16);
     text-align: center;
 }
 
@@ -54,7 +54,7 @@ body.locked-scroll {
 #door-text {
     position: absolute;
     text-align: center;
-    color: white;
+    color: rgb(215, 14, 241);
     font-size: 24px;
     font-family: 'Great Vibes', cursive;
     z-index: 10;
