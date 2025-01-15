@@ -2,8 +2,8 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to bottom, #259ae7, #66e281);
-    color: rgb(221, 16, 16);
+    background: linear-gradient(to bottom, #b7daf1, #b5ebc1);
+    color: rgb(180, 2, 224);
     text-align: center;
 }
 
@@ -54,7 +54,7 @@ body.locked-scroll {
 #door-text {
     position: absolute;
     text-align: center;
-    color: rgb(215, 14, 241);
+    color: rgb(7, 7, 7);
     font-size: 24px;
     font-family: 'Great Vibes', cursive;
     z-index: 10;
@@ -74,7 +74,7 @@ body.locked-scroll {
 
 /* Content Boxes */
 .content-box {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(15, 14, 14, 0.2);
     padding: 20px;
     margin: 20px 0;
     border-radius: 15px;
@@ -86,7 +86,7 @@ body.locked-scroll {
     display: inline-block;
     margin: 10px;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(201, 31, 31, 0.3);
     border-radius: 5px;
 }
 
