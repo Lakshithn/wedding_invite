@@ -1,19 +1,14 @@
 /* General Styles */
 body {
-    font-family: 'Madison', sans-serif;
-    background-color: #fff;
     margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    color: #333; /* Adjust text color for readability */
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Madison', sans-serif; /* Headings with Madison */
-}
-
-p, span, li, a {
-    font-family: 'Madison', sans-serif; /* Other elements with Madison */
+    font-family: 'Parisienne', cursive;
+    color: #FFF;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #dea2f0, #a441b1);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    scroll-behavior: smooth;
 }
     /* margin: 0;
     font-family: 'Roboto', sans-serif;
