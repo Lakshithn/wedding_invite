@@ -10,6 +10,7 @@ body {
 /* Lock Scrolling */
 body.locked-scroll {
     overflow: hidden;
+    height: 100vh; /* Ensure no scroll during door animation */
 }
 
 /* Door Section */
@@ -25,6 +26,11 @@ body.locked-scroll {
     align-items: center;
     z-index: 1000;
 }
+
+.door-open ~ #main-content {
+    display: block;
+}
+
 
 .door {
     width: 50%;
@@ -62,10 +68,10 @@ body.locked-scroll {
 
 /* Main Content */
 #main-content {
-    display: none;
     margin: 20px auto;
     width: 90%;
     max-width: 800px;
+    overflow: auto; /* Allow scrolling within the content */
 }
 
 .door-open ~ #main-content {

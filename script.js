@@ -29,17 +29,28 @@ function updateCountdown() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const doorContainer = document.getElementById('door-container');
-    const mainContent = document.getElementById('main-content');
+    const doors = document.getElementById("door-container");
 
-    // Handle door click to open
-    doorContainer.addEventListener('click', () => {
-        doorContainer.classList.add('door-open');
+    doors.addEventListener("click", () => {
+        document.body.classList.remove("locked-scroll");
+        doors.classList.add("door-open");
+
+        // Delay hiding the doors to ensure smooth animation
         setTimeout(() => {
-            doorContainer.style.display = 'none'; // Hide the door section
-            mainContent.style.display = 'block'; // Show the main content
-        }, 1500); // Match the duration of the door opening animation
+            doors.style.display = "none";
+        }, 1500); // Adjust timing to match the door animation
     });
+    // const doorContainer = document.getElementById('door-container');
+    // const mainContent = document.getElementById('main-content');
+
+    // // Handle door click to open
+    // doorContainer.addEventListener('click', () => {
+    //     doorContainer.classList.add('door-open');
+    //     setTimeout(() => {
+    //         doorContainer.style.display = 'none'; // Hide the door section
+    //         mainContent.style.display = 'block'; // Show the main content
+    //     }, 1500); // Match the duration of the door opening animation
+    // });
 });
 
 // Set multiple flower images for animation
