@@ -8,6 +8,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     scroll-behavior: smooth;
+    text-align: center;
     overflow-y: auto; /* Ensures scrolling works */
     /* overflow: hidden; */
 }
@@ -82,6 +83,7 @@ body.locked-scroll {
     margin: 20px auto;
     width: 90%;
     max-width: 800px;
+    text-align: center;
     overflow: auto; /* Allow scrolling within the content */
 }
 
@@ -103,6 +105,7 @@ body.locked-scroll {
     display: inline-block;
     margin: 10px;
     padding: 10px;
+    text-align: center;
     background: rgba(250, 191, 230, 0.3);
     border-radius: 5px;
 }
@@ -110,4 +113,25 @@ body.locked-scroll {
 .timer span {
     font-size: 30px;
     font-weight: bold;
+}
+
+
+/* Map Button */
+.map-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #FFD700;
+    color: #4b0082;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #4b0082;
+    color: #fff;
 }
