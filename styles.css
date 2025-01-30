@@ -4,7 +4,8 @@ body {
     font-family: 'Parisienne', cursive;
     color: hsl(0, 0%, 2%);
     line-height: 1.6;
-    background: linear-gradient(to bottom, #dea2f0, #a441b1);
+    /* background: linear-gradient(to bottom, #dea2f0, #a441b1); */
+    background: url('assets/bgm.jpeg') no-repeat center;
     background-attachment: fixed;
     background-size: cover;
     scroll-behavior: smooth;
