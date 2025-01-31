@@ -26,6 +26,13 @@ body.locked-scroll {
     height: 100vh; /* Ensure no scroll during door animation */
 }
 
+/* Highlighted Bride & Groom Names */
+.bride-groom-name {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #FFD700;
+}
+
 /* Door Section */
 #door-container {
     position: fixed;
