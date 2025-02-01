@@ -216,10 +216,6 @@ section p {
 }
 
 
-.map-button:hover {
-    background: #6A0DAD; /* Slightly lighter indigo on hover */
-}
-
 footer {
     text-align: center;
     padding: 20px;
