@@ -7,18 +7,18 @@ const secondsEl = document.getElementById("seconds");
 const audio = document.getElementById("background-music");
 
 // Function to play music when user interacts
-function playAudio() {
-    audio.play().catch(error => {
-        console.log("Autoplay blocked. User interaction needed.");
-    });
-}
+    function playAudio() {
+        audio.play().catch(error => {
+            console.log("Autoplay blocked. User interaction needed.");
+        });
+    }
 
-// Attempt to play on load
-playAudio();
+    // Attempt to play on load
+    playAudio();
 
-// Add event listeners to ensure playback on any user interaction
-document.body.addEventListener("click", playAudio);
-document.body.addEventListener("touchstart", playAudio);
+    // Add event listeners to ensure playback on any user interaction
+    document.body.addEventListener("click", playAudio);
+    document.body.addEventListener("touchstart", playAudio);
 
 function updateCountdown() {
     const now = new Date();
@@ -55,17 +55,17 @@ document.addEventListener("DOMContentLoaded", () => {
             doors.style.display = "none";
         }, 1500); // Adjust timing to match the door animation
     });
-    // const doorContainer = document.getElementById('door-container');
-    // const mainContent = document.getElementById('main-content');
+    const doorContainer = document.getElementById('door-container');
+    const mainContent = document.getElementById('main-content');
 
-    // // Handle door click to open
-    // doorContainer.addEventListener('click', () => {
-    //     doorContainer.classList.add('door-open');
-    //     setTimeout(() => {
-    //         doorContainer.style.display = 'none'; // Hide the door section
-    //         mainContent.style.display = 'block'; // Show the main content
-    //     }, 1500); // Match the duration of the door opening animation
-    // });
+    // Handle door click to open
+    doorContainer.addEventListener('click', () => {
+        doorContainer.classList.add('door-open');
+        setTimeout(() => {
+            doorContainer.style.display = 'none'; // Hide the door section
+            mainContent.style.display = 'block'; // Show the main content
+        }, 1500); // Match the duration of the door opening animation
+    });
 });
 
 // Set multiple flower images for animation

@@ -112,6 +112,9 @@ section p {
 }
 
 /* Door Section */
+
+
+
 #door-container {
     position: fixed;
     top: 0;
@@ -129,11 +132,10 @@ section p {
     display: block;
 }
 
-
 .door {
     width: 50%;
     height: 100%;
-    background: url('assets/door.png') no-repeat center center;
+    background: url('assets/door2.png') no-repeat center center;
     background-size: cover;
     transition: transform 1.5s ease-in-out;
     position: absolute;
