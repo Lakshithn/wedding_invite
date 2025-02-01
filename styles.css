@@ -167,7 +167,7 @@ section p {
 
 /* Content Boxes */
 .content-box {
-    background: rgb(240, 168, 236);
+    background: rgb(240, 168, 236, 0.8);
     padding: 20px;
     margin: 20px 0;
     border-radius: 15px;
