@@ -130,11 +130,11 @@ body.locked-scroll {
 
 /* Content Boxes */
 .content-box {
-    background: rgb(226, 243, 187);
+    background: rgb(243, 204, 243);
     padding: 20px;
     margin: 20px 0;
     border-radius: 15px;
-    box-shadow: 0 4px 10px  rgb(20, 27, 2);
+    box-shadow: 0 4px 10px  rgb(181, 114, 197);
 }
 
 /* Countdown Timer */
@@ -143,7 +143,7 @@ body.locked-scroll {
     margin: 10px;
     padding: 10px;
     text-align: center;
-    background: rgba(22, 31, 110, 0.637);
+    background: rgba(78, 4, 128, 0.637);
     border-radius: 5px;
 }
 
