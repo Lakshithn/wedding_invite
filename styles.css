@@ -11,16 +11,16 @@
 
 /* Increase heading sizes */
 header h1 {
-    font-size: 2.8rem; /* Larger heading size */
+    font-size: 2.0rem; /* Larger heading size */
 }
 
 h2 {
-    font-size: 2.2rem; /* Increase section heading size */
+    font-size: 1.5rem; /* Increase section heading size */
 }
 
 /* Adjust paragraph font size to be slightly smaller than headings */
 p {
-    font-size: 1.2rem; /* Smaller than headings but still readable */
+    font-size: 0.8rem; /* Smaller than headings but still readable */
 }
 
 /* General Styles */
@@ -28,7 +28,7 @@ body {
     margin: 0;
     font-family: 'Parisienne', cursive;
     color: hsl(0, 0%, 2%);
-    line-height: 1.6;
+    line-height: 1.0;
     /* background: linear-gradient(to bottom, #dea2f0, #a441b1); */
     /* background: url('assets/flower1.png') no-repeat center center fixed;
     background-attachment: fixed;
@@ -68,9 +68,9 @@ body {
     background-color: transparent; /* Gold color background */
     color: #4B0082;  /* Indigo text color for contrast */
     font-weight: bold;  /* Make it bold */
-    padding: 0 5px;  /* Add some padding around the text */
+    padding: 0 px;  /* Add some padding around the text */
     border-radius: 3px;  /* Optional: rounded corners for the highlight */
-    font-size: 1.6em; /* Slightly larger font for highlighted text */
+    font-size: 1.2rem; /* Slightly larger font for highlighted text */
 }
 /* Lock Scrolling */
 body.locked-scroll {
@@ -81,8 +81,8 @@ body.locked-scroll {
 
 /* Ensure all sections are visually clear */
 section p {
-    font-size: 1.2rem;
-    line-height: 1.4;
+    font-size: 0.8rem;
+    line-height: 1.0;
 }
 
 /* Door Section */
