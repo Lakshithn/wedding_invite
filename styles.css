@@ -5,7 +5,7 @@ body {
     color: hsl(0, 0%, 2%);
     line-height: 1.6;
     /* background: linear-gradient(to bottom, #dea2f0, #a441b1); */
-    background: url('assets/flower3.png') no-repeat center center fixed;
+    background: url('assets/flower1.png') no-repeat center center fixed;
     background-attachment: fixed;
     background-size: cover;
     scroll-behavior: smooth;
@@ -23,7 +23,7 @@ body {
 /* Responsive Background for Mobile Screens */
 @media (max-width: 768px) {
     body {
-        background: url('assets/flower3.png') no-repeat center center fixed;
+        background: url('assets/flower1.png') no-repeat center center fixed;
         background-size: contain; /* Adjusts without cropping */
     }
 }
