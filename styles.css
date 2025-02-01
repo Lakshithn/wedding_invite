@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'FontleroyBrown';
+    src: url('assets/FontleroyBrown.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Background Video */
 #bgVideo {
     position: fixed;
