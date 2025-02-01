@@ -16,6 +16,7 @@ header h1 {
     font-family: "Pacifico", serif;
     font-weight: 400;
     font-style: normal;
+    color: hsl(308, 93%, 16%);
 }
 
 h2 {
@@ -23,6 +24,7 @@ h2 {
     font-family: "Pacifico", serif;
     font-weight: 400;
     font-style: normal;
+    color: hsl(308, 93%, 16%);
 }
 
 /* Adjust paragraph font size to be slightly smaller than headings */
@@ -76,7 +78,7 @@ body {
 
 .bridegroom {
     background-color: transparent; /* Gold color background */
-    color: #290088;  /* Indigo text color for contrast */
+    color: #1a0450;  /* Indigo text color for contrast */
     font-family: "Pacifico", serif;
     font-weight: 400;
     font-style: normal;
