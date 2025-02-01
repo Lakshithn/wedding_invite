@@ -32,11 +32,13 @@ body {
 /* Responsive Background for Phones */
 @media (max-width: 768px) {
     body {
-        background-size: contain; /* Ensures full image is visible */
-        background-attachment: scroll; /* Allows natural scrolling */
-        background-position: center top; /* Aligns properly */
+        background-size: cover; /* Ensures full image coverage */
+        background-attachment: scroll;
+        min-height: 100vh; /* Ensures full background on mobile */
+        background-position: center center;
     }
 }
+
 /* Lock Scrolling */
 body.locked-scroll {
     overflow: hidden;
