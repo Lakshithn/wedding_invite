@@ -6,8 +6,19 @@ const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
 const audio = document.getElementById("background-music");
 
-// Play Music Automatically
-audio.play();
+// Function to play music when user interacts
+function playAudio() {
+    audio.play().catch(error => {
+        console.log("Autoplay blocked. User interaction needed.");
+    });
+}
+
+// Attempt to play on load
+playAudio();
+
+// Add event listeners to ensure playback on any user interaction
+document.body.addEventListener("click", playAudio);
+document.body.addEventListener("touchstart", playAudio);
 
 function updateCountdown() {
     const now = new Date();
@@ -63,22 +74,5 @@ flowers.forEach(flower => {
     const image = flower.dataset.image;
     flower.style.backgroundImage = `url('assets/${image}')`;
 });
-
-// Audio Toggle
-// const audio = document.getElementById("background-music");
-window.addEventListener('load', () => {
-    audio.play().catch(err => console.log("Autoplay blocked. User interaction required."));
-});
-// const audioToggle = document.getElementById("audio-toggle");
-
-//     audioToggle.addEventListener("click", () => {
-//         if (audio.paused) {
-//             audio.play();
-//             audioToggle.textContent = "🔊";
-//         } else {
-//             audio.pause();
-//             audioToggle.textContent = "🔇";
-//         }
-//     });
 setInterval(updateCountdown, 1000);
 updateCountdown();
