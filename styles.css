@@ -72,7 +72,7 @@ body {
     background-color: transparent; /* Gold color background */
     color: #4B0082;  /* Indigo text color for contrast */
     font-weight: bold;  /* Make it bold */
-    padding: 0 1 px;  /* Add some padding around the text */
+    padding: 0 2 px;  /* Add some padding around the text */
     border-radius: 3px;  /* Optional: rounded corners for the highlight */
     font-size: 1.2rem; /* Slightly larger font for highlighted text */
 }
