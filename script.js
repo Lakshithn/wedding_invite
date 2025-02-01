@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Delay hiding the door container for the animation
     setTimeout(() => {
       doors.style.display = "none";
-    }, 500);
+    }, 1000);
   });
 });
 
