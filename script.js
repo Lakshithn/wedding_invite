@@ -43,19 +43,25 @@ function updateCountdown() {
     secondsEl.textContent = seconds;
 }
 
+
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const doors = document.getElementById("door-container");
+    const mainContent = document.getElementById("main-content");
 
+    
     doors.addEventListener("click", () => {
         document.body.classList.remove("locked-scroll");
         doors.classList.add("door-open");
-
-        // Delay hiding the doors to ensure smooth animation
         setTimeout(() => {
             doors.style.display = "none";
-        }, 1500); // Adjust timing to match the door animation
+        }, 1500);
     });
-    const doorContainer = document.getElementById('door-container');
+});
+
+const doorContainer = document.getElementById('door-container');
     const mainContent = document.getElementById('main-content');
 
     // Handle door click to open
@@ -66,7 +72,21 @@ document.addEventListener("DOMContentLoaded", () => {
             mainContent.style.display = 'block'; // Show the main content
         }, 1500); // Match the duration of the door opening animation
     });
-});
+
+// document.addEventListener("DOMContentLoaded", () => {
+//     const doors = document.getElementById("door-container");
+
+//     doors.addEventListener("click", () => {
+//         document.body.classList.remove("locked-scroll");
+//         doors.classList.add("door-open");
+
+//         // Delay hiding the doors to ensure smooth animation
+//         setTimeout(() => {
+//             doors.style.display = "none";
+//         }, 1500); // Adjust timing to match the door animation
+//     });
+    
+// });
 
 setInterval(updateCountdown, 1000);
 updateCountdown();
