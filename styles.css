@@ -218,8 +218,8 @@ section p {
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
-    /* background-color:  #FFD700;
-    transition: background 0.3s ease; */
+    /* background-color:  #FFD700; */
+    transition: background 0.3s ease;
 }
 
 
