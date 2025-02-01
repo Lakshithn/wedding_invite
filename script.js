@@ -5,7 +5,7 @@ const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
 const audio = document.getElementById("background-music");
-
+const musicToggle = document.getElementById("music-toggle");
 // Function to play music when user interacts
     function playAudio() {
         audio.play().catch(error => {
