@@ -33,13 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.remove("locked-scroll");
     doors.classList.add("door-open");
     
-    // Fade out the door text quickly
-    doorText.style.opacity = "0";
-
-    // Set visibility to hidden after the transition duration
-    setTimeout(() => {
-        doorText.style.visibility = "hidden";
-        }, 100);
     // Play audio when main content is revealed
     audio.play().catch(error => {
       console.log("Audio play error:", error);
@@ -48,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Delay hiding the door container for the animation
     setTimeout(() => {
       doors.style.display = "none";
-    }, 2000);
+    }, 1500);
   });
 });
 

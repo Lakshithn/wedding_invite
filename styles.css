@@ -118,7 +118,7 @@ body.locked-scroll {
     width: 50%;
     height: 100%;
     overflow: hidden;
-    transition: transform 2.0s ease-in-out;
+    transition: transform 1.5s ease-in-out;
     position: absolute;
 }
 
@@ -155,8 +155,6 @@ body.locked-scroll {
     font-weight: 400;
     font-style: normal;
     z-index: 10;
-    visibility: visible;
-    transition: opacity 0.1s ease; /* Added transition for opacity */
 }
 
 /* Main Content */
