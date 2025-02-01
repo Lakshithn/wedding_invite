@@ -5,10 +5,11 @@ body {
     color: hsl(0, 0%, 2%);
     line-height: 1.6;
     /* background: linear-gradient(to bottom, #dea2f0, #a441b1); */
-    background: url('assets/flower3.png') no-repeat center;
+    background: url('assets/flower3.png') no-repeat center center fixed;
     background-attachment: fixed;
     background-size: cover;
     scroll-behavior: smooth;
+    background-position: center;
     text-align: center;
     overflow-y: auto; /* Ensures scrolling works */
     /* overflow: hidden; */
@@ -19,7 +20,20 @@ body {
     color: rgb(231, 63, 12);
     text-align: center;
 } */
+/* Responsive Background for Mobile Screens */
+@media (max-width: 768px) {
+    body {
+        background: url('assets/flower3.png') no-repeat center center fixed;
+        background-size: contain; /* Adjusts without cropping */
+    }
+}
 
+/* Even smaller screens (phones) */
+@media (max-width: 480px) {
+    body {
+        background-size: 100% 100%; /* Ensures full coverage without zoom */
+    }
+}
 /* Lock Scrolling */
 body.locked-scroll {
     overflow: hidden;
