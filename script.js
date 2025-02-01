@@ -1,5 +1,5 @@
 // Countdown Timer
-const weddingDate = new Date("2025-02-06T18:00:00"); // Replace with your wedding date
+const weddingDate = new Date("2025-02-06T19:00:00"); // Replace with your wedding date
 const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
@@ -16,9 +16,21 @@ const audio = document.getElementById("background-music");
     // Attempt to play on load
     playAudio();
 
-    // Add event listeners to ensure playback on any user interaction
-    document.body.addEventListener("click", playAudio);
-    document.body.addEventListener("touchstart", playAudio);
+ // Add event listeners to ensure playback on any user interaction
+document.body.addEventListener("click", playAudio);
+document.body.addEventListener("touchstart", playAudio);
+
+
+// Music Toggle Button Event Listener
+musicToggle.addEventListener("click", () => {
+    if (audio.paused) {
+        audio.play();
+        musicToggle.textContent = "Pause Music";
+    } else {
+        audio.pause();
+        musicToggle.textContent = "Play Music";
+    }
+});
 
 function updateCountdown() {
     const now = new Date();

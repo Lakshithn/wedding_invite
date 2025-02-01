@@ -230,6 +230,8 @@ body.locked-scroll {
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
+    border: 2px solid #fff;        /* Added border for box effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);  /* Added subtle shadow for depth */
 }
 
 
