@@ -32,7 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
   doors.addEventListener("click", () => {
     document.body.classList.remove("locked-scroll");
     doors.classList.add("door-open");
-
+    
+    // Fade out the door text quickly
+    doorText.style.opacity = "0";
     // Play audio when main content is revealed
     audio.play().catch(error => {
       console.log("Audio play error:", error);
