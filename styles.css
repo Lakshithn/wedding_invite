@@ -76,6 +76,16 @@ body {
     border-radius: 3px;  /* Optional: rounded corners for the highlight */
     font-size: 1.2rem; /* Slightly larger font for highlighted text */
 }
+
+.bridegroom {
+    background-color: transparent; /* Gold color background */
+    color: #ec084d;  /* Indigo text color for contrast */
+    font-weight: bold;  /* Make it bold */
+    padding: 0 5 px;  /* Add some padding around the text */
+    border-radius: 3px;  /* Optional: rounded corners for the highlight */
+    font-size: 2.3rem; /* Slightly larger font for highlighted text */
+}
+
 /* Lock Scrolling */
 body.locked-scroll {
     overflow: hidden;
