@@ -134,7 +134,7 @@ body.locked-scroll {
     padding: 20px;
     margin: 20px 0;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(118, 204, 68, 0.5);
+    box-shadow: 0 4px 10px rgba(184, 38, 221, 0.5);
 }
 
 /* Countdown Timer */
@@ -143,7 +143,7 @@ body.locked-scroll {
     margin: 10px;
     padding: 10px;
     text-align: center;
-    background: rgba(250, 191, 230, 0.3);
+    background: rgba(221, 23, 155, 0.637);
     border-radius: 5px;
 }
 
