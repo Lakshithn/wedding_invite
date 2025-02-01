@@ -68,11 +68,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Set multiple flower images for animation
-const flowers = document.querySelectorAll(".flowerss");
-flowers.forEach(flower => {
-    const image = flower.dataset.image;
-    flower.style.backgroundImage = `url('assets/${image}')`;
-});
 setInterval(updateCountdown, 1000);
 updateCountdown();
