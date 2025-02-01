@@ -65,7 +65,7 @@ body {
 
 /* Highlighting bride and groom names */
 .highlight {
-    background-color: transparent; /* Gold color background */
+    background-color: #FFD700; ; /* Gold color background */
     color: #4B0082;  /* Indigo text color for contrast */
     font-weight: bold;  /* Make it bold */
     padding: 0 px;  /* Add some padding around the text */
