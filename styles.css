@@ -29,7 +29,7 @@ h2 {
 
 /* Adjust paragraph font size to be slightly smaller than headings */
 p {
-    font-size: 1.0rem; /* Smaller than headings but still readable */
+    font-size: 1.2rem; /* Smaller than headings but still readable */
     font-family: "Great Vibes", serif;
     font-weight: 400;
     font-style: normal;
