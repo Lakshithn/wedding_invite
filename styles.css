@@ -201,24 +201,6 @@ body.locked-scroll {
     line-height: 1.8;  /* Increase line spacing for better readability */
 }
 
-/* Styling for the Venue Section
-#story p {
-    font-size: 1.75rem;  /* Keep consistent with the other sections */
-    /* line-height: 1.8;
-}
-
-/* Countdown Section styling */
-/* #countdown p {
-    font-size: 1.75rem;  /* Make countdown text bigger */
-    /* line-height: 1.8;
-}
-
-#venue-info p {
-    font-size: 1.75rem;  /* Make countdown text bigger */
-    /* line-height: 1.8;
-} */ */ */ */ */
-
-
 /* Map Button */
 .map-button {
     display: inline-block;
