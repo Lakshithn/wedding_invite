@@ -103,6 +103,8 @@ body.locked-scroll {
     background: transparent;
     display: flex;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
     z-index: 1000;
 }
 
@@ -113,7 +115,6 @@ body.locked-scroll {
 .door {
     width: 50%;
     height: 100%;
-    position: absolute;
     overflow: hidden;
     transition: transform 1.5s ease-in-out;
     position: absolute;
@@ -134,13 +135,6 @@ body.locked-scroll {
     height: 100%;
     object-fit: cover; /* Ensures the image is shown fully without cropping */
 }
-
-/* Mobile adjustments: use contain so the full door is visible */
-/* @media (max-width: 768px) {
-    .door img {
-        object-fit: contain;
-    }
-} */
 
 .door-open #left-door {
     transform: rotateY(-90deg);
