@@ -1,3 +1,14 @@
+/* Background Video */
+#bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Ensures video covers the entire screen */
+    z-index: -1; /* Keeps it in the background */
+}
+
 /* General Styles */
 body {
     margin: 0;
@@ -5,11 +16,17 @@ body {
     color: hsl(0, 0%, 2%);
     line-height: 1.6;
     /* background: linear-gradient(to bottom, #dea2f0, #a441b1); */
-    background: url('assets/flower1.png') no-repeat center center fixed;
+    /* background: url('assets/flower1.png') no-repeat center center fixed;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; */
     scroll-behavior: smooth;
-    background-position: center;
+    /* background-position: center; */
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     overflow-y: auto; /* Ensures scrolling works */
     /* overflow: hidden; */
@@ -20,22 +37,15 @@ body {
     color: rgb(231, 63, 12);
     text-align: center;
 } */
-/* Responsive Background for Mobile Screens */
-/* Adjust for Tablets */
-@media (max-width: 1024px) {
-    body {
-        background-size: cover; /* Ensures a proper fit */
-        background-attachment: scroll; /* Avoids fixed image issues on tablets */
-    }
-}
 
-/* Responsive Background for Phones */
 @media (max-width: 768px) {
+    #bgVideo {
+        display: none; /* Hide video on mobile */
+    }
+
     body {
-        background-size: cover; /* Ensures full image coverage */
-        background-attachment: scroll;
-        min-height: 100vh; /* Ensures full background on mobile */
-        background-position: center center;
+        background: url('assets/final_image.jpeg') no-repeat center center;
+        background-size: cover;
     }
 }
 
