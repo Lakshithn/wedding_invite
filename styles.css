@@ -27,7 +27,7 @@ p {
 /* General Styles */
 body {
     margin: 0;
-    font-family: "Pacifico", serif;
+    font-family: "Satisfy", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -148,7 +148,7 @@ section p {
     text-align: center;
     color: rgb(7, 7, 7);
     font-size: 24px;
-    font-family: 'Great Vibes', cursive;
+    font-family: "Satisfy", serif;
     z-index: 10;
 }
 
@@ -225,8 +225,6 @@ section p {
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
-    /* background-color:  #FFD700; */
-    transition: background 0.3s ease;
 }
 
 
