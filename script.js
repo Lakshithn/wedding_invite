@@ -1,5 +1,5 @@
 // Countdown Timer
-const weddingDate = new Date("2025-02-06T19:00:00"); // Replace with your wedding date
+const weddingDate = new Date("2025-02-06T18:00:00"); // Replace with your wedding date
 const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
@@ -16,21 +16,9 @@ const audio = document.getElementById("background-music");
     // Attempt to play on load
     playAudio();
 
- // Add event listeners to ensure playback on any user interaction
+    // Add event listeners to ensure playback on any user interaction
     document.body.addEventListener("click", playAudio);
     document.body.addEventListener("touchstart", playAudio);
-
-
-// Music Toggle Button Event Listener
-    musicToggle.addEventListener("click", () => {
-        if (audio.paused) {
-            audio.play();
-            musicToggle.textContent = "Pause Music";
-        } else {
-            audio.pause();
-            musicToggle.textContent = "Play Music";
-        }
-    });
 
 function updateCountdown() {
     const now = new Date();
@@ -56,14 +44,9 @@ function updateCountdown() {
 }
 
 
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const doors = document.getElementById("door-container");
     const mainContent = document.getElementById("main-content");
-
-    
     doors.addEventListener("click", () => {
         document.body.classList.remove("locked-scroll");
         doors.classList.add("door-open");
@@ -73,17 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-const doorContainer = document.getElementById('door-container');
-    const mainContent = document.getElementById('main-content');
-
-    // Handle door click to open
-    doorContainer.addEventListener('click', () => {
-        doorContainer.classList.add('door-open');
-        setTimeout(() => {
-            doorContainer.style.display = 'none'; // Hide the door section
-            mainContent.style.display = 'block'; // Show the main content
-        }, 1500); // Match the duration of the door opening animation
-    });
 
 // document.addEventListener("DOMContentLoaded", () => {
 //     const doors = document.getElementById("door-container");
@@ -97,7 +69,17 @@ const doorContainer = document.getElementById('door-container');
 //             doors.style.display = "none";
 //         }, 1500); // Adjust timing to match the door animation
 //     });
-    
+    const doorContainer = document.getElementById('door-container');
+    const mainContent = document.getElementById('main-content');
+
+    // Handle door click to open
+    doorContainer.addEventListener('click', () => {
+        doorContainer.classList.add('door-open');
+        setTimeout(() => {
+            doorContainer.style.display = 'none'; // Hide the door section
+            mainContent.style.display = 'block'; // Show the main content
+        }, 1500); // Match the duration of the door opening animation
+    });
 // });
 
 setInterval(updateCountdown, 1000);
