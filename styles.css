@@ -12,11 +12,11 @@
 
 /* Increase heading sizes */
 header h1 {
-    font-size: 2.0rem; /* Larger heading size */
+    font-size: 2.3rem; /* Larger heading size */
     font-family: "Pacifico", serif;
     font-weight: 400;
     font-style: normal;
-    color: hsl(308, 93%, 16%);
+    color: hsl(0, 0%, 0%);
 }
 
 h2 {
@@ -188,7 +188,7 @@ body.locked-scroll {
     margin: 10px;
     padding: 10px;
     text-align: center;
-    background: rgba(44, 1, 73, 0.637);
+    background: rgba(0, 204, 255, 0.637);
     border-radius: 5px;
 }
 
