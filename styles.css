@@ -21,17 +21,20 @@ body {
     text-align: center;
 } */
 /* Responsive Background for Mobile Screens */
-@media (max-width: 768px) {
+/* Adjust for Tablets */
+@media (max-width: 1024px) {
     body {
-        background: url('assets/flower1.png') no-repeat center center fixed;
-        background-size: contain; /* Adjusts without cropping */
+        background-size: cover; /* Ensures a proper fit */
+        background-attachment: scroll; /* Avoids fixed image issues on tablets */
     }
 }
 
-/* Even smaller screens (phones) */
-@media (max-width: 480px) {
+/* Responsive Background for Phones */
+@media (max-width: 768px) {
     body {
-        background-size: 100% 100%; /* Ensures full coverage without zoom */
+        background-size: contain; /* Ensures full image is visible */
+        background-attachment: scroll; /* Allows natural scrolling */
+        background-position: center top; /* Aligns properly */
     }
 }
 /* Lock Scrolling */
