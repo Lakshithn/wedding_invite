@@ -136,11 +136,11 @@ body.locked-scroll {
 }
 
 /* Mobile adjustments: use contain so the full door is visible */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .door img {
         object-fit: contain;
     }
-}
+} */
 
 .door-open #left-door {
     transform: rotateY(-90deg);
