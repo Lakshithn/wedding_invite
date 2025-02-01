@@ -62,7 +62,9 @@ body {
 
     body {
         background: url('assets/finalpic.jpeg') no-repeat center center;
-        background-size: contain;
+        background-size: 100% auto; /* Makes background span full width, height adjusts automatically */
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 }
 
