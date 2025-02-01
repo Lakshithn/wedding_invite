@@ -17,20 +17,20 @@ const audio = document.getElementById("background-music");
     playAudio();
 
  // Add event listeners to ensure playback on any user interaction
-document.body.addEventListener("click", playAudio);
-document.body.addEventListener("touchstart", playAudio);
+    document.body.addEventListener("click", playAudio);
+    document.body.addEventListener("touchstart", playAudio);
 
 
 // Music Toggle Button Event Listener
-musicToggle.addEventListener("click", () => {
-    if (audio.paused) {
-        audio.play();
-        musicToggle.textContent = "Pause Music";
-    } else {
-        audio.pause();
-        musicToggle.textContent = "Play Music";
-    }
-});
+    musicToggle.addEventListener("click", () => {
+        if (audio.paused) {
+            audio.play();
+            musicToggle.textContent = "Pause Music";
+        } else {
+            audio.pause();
+            musicToggle.textContent = "Play Music";
+        }
+    });
 
 function updateCountdown() {
     const now = new Date();
